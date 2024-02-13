@@ -6,8 +6,9 @@
 
     <!--  -->
     <link rel="icon" href="img/title.png" type="image" />
-    <!--  -->
-    <!--  -->
+    <!-- animation -->
+    <link rel="stylesheet" href="css/aos-anmite.css" />
+    <!-- animation -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="sass/_navbar.scss" />
     <!--  -->
@@ -83,13 +84,11 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="img"> <img src="img/title.png" alt="" /></div>
+          <div class="img"><img src="img/title.png" alt="" /></div>
 
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="About-Us.html">About Us</a>
@@ -115,7 +114,11 @@
                 <img src="img/en.png" alt="" />
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">AR <img src="img/download.jfif" alt=""></a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >AR <img src="img/download.jfif" alt=""
+                  /></a>
+                </li>
                 <li><a class="dropdown-item" href="#">Another languge</a></li>
               </ul>
             </div>
@@ -130,6 +133,7 @@
     </nav>
     <!-- nav -->
 
+    <!-- serves -->
     <div class="pagge-serves">
       <div class="our-services">
         <div class="container">
@@ -147,7 +151,11 @@
               <span>Services</span>
             </h5>
           </div>
-          <div class="Important-Services">
+          <div class="Important-Services"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+          >
             <div class="items-Services">
               <div class="img">
                 <img src="img/ser2.png" alt="" />
@@ -240,7 +248,10 @@
               </div>
             </div>
           </div>
-          <div class="Important-Services">
+          <div  class="Important-Services"
+            data-aos="fade-right"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine" >
             <div class="items-Services">
               <div class="text">
                 <h4>OCEAN FREIGHT</h4>
@@ -333,7 +344,11 @@
               </div>
             </div>
           </div>
-          <div class="Important-Services">
+          <div class="Important-Services"
+          data-aos="fade-left"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine" 
+          >
             <div class="items-Services">
               <div class="img">
                 <img src="img/ser4.png" alt="" />
@@ -426,7 +441,11 @@
               </div>
             </div>
           </div>
-          <div class="Important-Services">
+          <div class="Important-Services"
+            data-aos="fade-right"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="items-Services">
               <div class="text">
                 <h4>OCEAN FREIGHT</h4>
@@ -522,11 +541,11 @@
         </div>
       </div>
     </div>
-
+    <!-- serves -->
 
     <!-- subscibe -->
     <div class="container">
-      <div class="Subscribe">
+      <div class="Subscribe" data-aos="flip-right" data-aos-duration="1500">
         <p>Get the latest news and events</p>
         <h4>Subscribe now to see the latest offers</h4>
         <form>
@@ -645,7 +664,9 @@
             </div>
           </div>
           <div class="Made-by">
-            <a href="#"><h6>Made by <span>x</span> Coders coding with expert </h6></a>
+            <a href="#"
+              ><h6>Made by <span>x</span> Coders coding with expert</h6></a
+            >
             <h6>© All rights reserved @ AFLAK platform</h6>
           </div>
         </div>
@@ -660,6 +681,13 @@
     <script src="js/waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- animate -->
+    <script src="js/aos-anmite.js"></script>
+    <script>
+      AOS.init({ disable: "mobile" });
+    </script>
+    <!-- animate -->
+    
     <!-- swiper3 -->
     <script>
       var swiper = new Swiper(".mySwiper3", {

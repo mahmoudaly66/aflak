@@ -6,8 +6,9 @@
 
     <!--  -->
     <link rel="icon" href="img/title.png" type="image" />
-    <!--  -->
-    <!--  -->
+    <!-- animation -->
+    <link rel="stylesheet" href="css/aos-anmite.css" />
+    <!-- animation -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="sass/_navbar.scss" />
     <!--  -->
@@ -36,7 +37,6 @@
     <title>Aflak Home</title>
   </head>
   <body>
-    
     <div class="home">
       <!-- header -->
       <header>
@@ -184,7 +184,8 @@
       <!-- mySwiper1 -->
 
       <!-- advantges -->
-      <div class="advantges-home">
+      <div class="advantges-home" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic" data-aos-duration="1300">
         <div class="container">
           <div class="head">
             <div class="title">
@@ -290,7 +291,7 @@
             </div>
           </div>
           <!-- About-Us -->
-          <div class="About-Us">
+          <div class="About-Us" data-aos="zoom-in" data-aos-duration="1500">
             <div class="row align-items-end">
               <div class="col-lg-7 col-md-12 col-12">
                 <div class="About-Us-Experiences">
@@ -374,7 +375,7 @@
       <!-- advantges -->
 
       <!-- Services -->
-      <div class="Services">
+      <div class="Services" data-aos="fade-down" data-aos-duration="2500">
         <div class="container">
           <div class="title">
             <h1>Services</h1>
@@ -471,7 +472,12 @@
 
       <!-- how-it-work -->
       <div class="how-it-work">
-        <div class="container">
+        <div
+          class="container"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <div class="title">
             <h1>How</h1>
             <p>How It’s Work</p>
@@ -639,7 +645,7 @@
       <!-- contact us -->
 
       <!-- BLOGS -->
-      <div class="BLOGs">
+      <div class="BLOGs" data-aos="zoom-in-up" data-aos-duration="2000">
         <div class="container">
           <div class="title">
             <div class="contant">
@@ -720,7 +726,7 @@
 
       <!-- subscibe -->
       <div class="container">
-        <div class="Subscribe">
+        <div class="Subscribe" data-aos="flip-right" data-aos-duration="1500">
           <p>Get the latest news and events</p>
           <h4>Subscribe now to see the latest offers</h4>
           <form>
@@ -856,6 +862,12 @@
     <script src="js/counterup.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- animate -->
+    <script src="js/aos-anmite.js"></script>
+    <script>
+      AOS.init({ disable: "mobile" });
+    </script>
+    <!-- animate -->
 
     <!-- mySwiper1 -->
     <script>
@@ -923,7 +935,5 @@
       });
     </script>
     <!-- swiper3 -->
-
-
   </body>
 </html>

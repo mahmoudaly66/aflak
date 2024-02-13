@@ -6,8 +6,9 @@
 
     <!--  -->
     <link rel="icon" href="img/title.png" type="image" />
-    <!--  -->
-    <!--  -->
+    <!-- animation -->
+    <link rel="stylesheet" href="css/aos-anmite.css" />
+    <!-- animation -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="sass/_navbar.scss" />
     <!--  -->
@@ -259,7 +260,7 @@
 
     <!-- subscibe -->
     <div class="container">
-      <div class="Subscribe">
+      <div class="Subscribe" data-aos="flip-right" data-aos-duration="1500">
         <p>Get the latest news and events</p>
         <h4>Subscribe now to see the latest offers</h4>
         <form>
@@ -392,5 +393,12 @@
     <script src="js/counterup.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate -->
+    <script src="js/aos-anmite.js"></script>
+    <script>
+      AOS.init({ disable: "mobile" });
+    </script>
+    <!-- animate -->
   </body>
 </html>
