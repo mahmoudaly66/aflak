@@ -597,6 +597,39 @@ body {
         }
       }
     }
+    .items-package{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-image: url(../img/arrowhow.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      .item-one{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        .icon{
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #56A0DD;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 3px solid black;
+          img{
+            width: 55%;
+          }
+        }
+        p{
+          font-size: 1rem;
+          font-family: "bold";
+          margin-top: .5rem;
+        }
+      }
+    }
     .img {
       img {
         width: 100%;
